@@ -1,0 +1,14 @@
+import React from 'react';
+import './flagcard.css';
+
+export default function FlagCard({ name, iso2, continent }) {
+  return (
+    <>
+      <div className="flag">
+        <img src={`https://flagcdn.com/112x84/${iso2.toLowerCase()}.png`} />
+        <h2>{name}</h2>
+        <h4 className="italic">{continent}</h4>
+      </div>
+    </>
+  );
+}
